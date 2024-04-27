@@ -89,20 +89,22 @@
     }// botão 11
 
     function backGroundP() {
-      document.getElementById("manipula")[0].getElementsByClassName("paragrafo")[0].style.backgroundColor = "#ff0000";
+      document.getElementById("manipula").getElementsByClassName("paragrafo")[0].style.backgroundColor = "red";
     }// botão 12
 
     function mudaCorBotao() {
-      document.getElementsByTagName("input")[4].style.backgroundColor = "ligthblue";
+      document.getElementsByTagName("input")[6].style.backgroundColor = "lightblue";
     }// botão 13
 
     function mudaCorTodosBotoes() {
       var x = document.getElementById("botoes")
       var y = x.getElementsByTagName("input")
       var i;
+
       for (i = 0; i < y.length; i++) {
-        y[i].style.backgroundColor = "ligthblue"
+        y[i].style.backgroundColor = "lightblue"
       }
+
     }// botão 14
 
     function contaBotao() {
@@ -115,11 +117,12 @@
     }// botão 16
 
     function fundo() {
-      document.querySelector("body").style.backgroundColor = "ligthblue";
+      document.querySelector("body").style.backgroundColor = "lightblue";
     }// botão 17
 
     function imagem() {
-      document.querySelector("body").style.backgroundColor = "ligthblue";
+      var img = document.querySelector("#imagem")
+      img.setAttribute("src", "alien.jpg")
     }// botão 17
 
 
